@@ -81,7 +81,7 @@ void loop() {
       }
       else if( (pressed == '*') && currentCode > 1)
       {
-        myDFPlayer.play(currentCode);  //Play the numbered mp3
+        myDFPlayer.play(currentCode-1);  //Play the numbered mp3
       }
       else if( (pressed >= 0x30) && (pressed <= 0x39) ) // check it is a number - ascii 0x30 = '0'
       {
